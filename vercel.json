@@ -10,7 +10,7 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"server.js"
+            "dest":"server.js",
             "src": "/api/(?<products>[^/]*)",
             "dest":"/api/products?limit=9&&&title[regex]="
           
