@@ -7,15 +7,8 @@
        }
         
     ],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"server.js"
-          
-        },
-
-         { "src": "/user","methods": ["POST"], "dest": "/(.*)"  },
-    { "src": "/products/(?<limit>[^/]+)",  "dest": "products?limit=9&&&title[regex]="}
-    ]
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/server.js" }]
+}
 }
 
