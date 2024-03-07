@@ -9,10 +9,13 @@
     ],
     "routes":[
         {
-            "src":"/*.*",
+            "src":"/(.*)",
             "dest":"server.js"
           
-        }
+        },
+
+         { "src": "/api", "dest": "/(.*)" },
+    { "src": "/users", "methods": ["POST"], "dest": "/(.*)" }
     ]
 }
 
