@@ -1,7 +1,9 @@
 
-    
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "server.js" }]
+  "rewrites": [
+    {
+      "source": "/proxy/:match*",
+      "destination": "https://store-mern.vercel.app/:match*"
+    }
+  ]
 }
-
-
