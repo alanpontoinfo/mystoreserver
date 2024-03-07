@@ -14,8 +14,8 @@
           
         },
 
-         { "src": "/api", "dest": "/(.*)" },
-    { "src": "/users", "methods": ["POST"], "dest": "/(.*)" }
+         { "src": "/user","methods": ["POST"], "dest": "/(.*)"  },
+    { "src": "/products/(?<limit>[^/]+)",  "dest": "products?limit=9&&&title[regex]="}
     ]
 }
 
