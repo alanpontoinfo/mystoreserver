@@ -7,9 +7,9 @@
        }
         
     ],
-    "rewrites":[
+    "routes":[
         {
-            "src":"/.*",
+            "src":"/*.*",
             "destination":"server.js"
           
         }
