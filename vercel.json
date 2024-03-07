@@ -1,9 +1,15 @@
-
+ "builds":[
+        { 
+          "src": "*.js", 
+          "use": "@vercel/node" 
+       }
+        
+    ],
 {
   "rewrites": [
     {
       "source": "/proxy/:match*",
-      "destination": "https://store-mern.vercel.app/:match*"
+      "destination": "https://mystoreserver.vercel.app/:match*"
     }
   ]
 }
