@@ -7,13 +7,11 @@
        }
         
     ],
-
-        
-  "rewrites": [
-    {
-      "source": "/proxy/:match*",
-      "destination": "https://mystoreserver.vercel.app/:match*"
-    }
-  ],
+"routes":[
+        {
+            "src":"/(.*)",
+            "dest":"server.js"
+        }
+    ]
         
 }
